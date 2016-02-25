@@ -1,0 +1,1201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/example.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-timeline.css">
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Chronological indexes</title>
+   
+</head>
+<body> 
+	<header>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>Chronological indexes</h1>
+			</div>
+		</div>
+	</header>
+    
+	<main>
+	<div>
+		<input type="text" id="SearchText" value="search" />
+	</div>
+	<div id="SearchResults" sytle="display:none;">
+	</div>
+		<div id="jQueryTimeLine" class="wrapper-timeline">
+
+			<div id="jquery-timeline"></div>
+
+		</div>
+	</main>
+	<footer>
+		<div class="jt-wrapper">
+			<div class="jt-copyright">
+				<div></div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script language="javascript" type="text/javascript" src="jquery/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery-timeline.js"></script>
+	<script language="javascript" type="text/javascript" src="js/linq.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function($){
+			var data = {
+				"timeline": [
+					{
+						"startDate":"1800-02-11",
+						"endDate":"1877-09-17",
+						"headline":"<a href='google.com'>William Henry Fox Talbot</a>",
+						"text":"Fox Talbot was a pioneer English photographer who also did work on elliptic functions.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1800-05-30",
+						"endDate":"1834-03-12",
+						"headline":"Karl Wilhelm Feuerbach",
+						"text":"Karl Feuerbach was a geometer who discovered the nine point circle of a triangle.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1801-05-15",
+						"endDate":"1859-01-22",
+						"headline":"Joseph Ludwig Raabe",
+						"text":"Joseph Raabe is mostly remembered for Raabe's Test for convergence of series.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					{
+						"startDate":"1801-01-16",
+						"endDate":"1885-05-22",
+						"headline":"Thomas Clausen",
+						"text":"Thomas Clausen was a Danish mathematician who wrote over 150 papers on pure mathematics, applied mathematics, astronomy and geophysics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1801-06-16",
+						"endDate":"1868-05-22",
+						"headline":"Julius Plücker",
+						"text":"Julius Plücker was a German mathematician who made important contributions to analytic geometry and physics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1801-07-27",
+						"endDate":"1892-01-02",
+						"headline":"George Biddell Airy",
+						"text":"George Airy was Lucasian professor at Cambridge and Astronomer Royal. He made many major contributions to mathematics and astronomy.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1801-08-28",
+						"endDate":"1877-03-31",
+						"headline":"Antoine Augustin Cournot",
+						"text":"Antoine Cournot was a French mathematician who was a pioneer of mathematical economics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1801-09-24",
+						"endDate":"1862-01-01",
+						"headline":"Mikhail Vasilevich Ostrogradski",
+						"text":"Mikhail Ostrogradski worked on hydrodynamics, elasticity, heat and electricity.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1801-10-14",
+						"endDate":"1883-09-15",
+						"headline":"Joseph Antoine Ferdinand Plateau",
+						"text":"Joseph Plateau was a Belgian mathematician best known for Plateau's problem on surfaces of minimal area.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1802-06-21",
+						"endDate":"1868-05-13",
+						"headline":"Jean-Baptiste Brasseur",
+						"text":"Jean-Baptiste Brasseur was born in Esch-sur-Alzette, a town in the south of Luxembourg near the border with France.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1802-06-05",
+						"endDate":"1869-04-06",
+						"headline":"Niels Henrik Abel",
+						"text":"Niels Abel was a Norwegian mathematician who proved the impossibility of solving algebraically the general equation of the fifth degree.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1802-12-15",
+						"endDate":"1860-01-27",
+						"headline":"János Bolyai",
+						"text":"János Bolyai was a pioneer of non-Euclidean geometry.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1803-01-01",
+						"endDate":"1869-09-28",
+						"headline":"Count Guglielmo Libri Carucci dalla Sommaja",
+						"text":"Guglielmo Libri was an Italian mathematician who worked on mathematical physics, number theory and the theory of equations. He also published works on the history of mathematics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1803-02-28",
+						"endDate":"1882-10-27",
+						"headline":"Christian Heinrich von Nagel",
+						"text":"Christian Heinrich von Nagel's parents were Johann Heinrich Nagel, who was a tailor, and Christiane Friedrike Huntzinger.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1803-11-22",
+						"endDate":"1880-11-06",
+						"headline":"Giusto Bellavitis",
+						"text":"Giusto Bellavitis was an Italian mathematician who worked on a large range of mathematical topics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1803-11-29",
+						"endDate":"1853-03-07",
+						"headline":"Christian Andreas Doppler",
+						"text":"Christian Doppler was an Austrian mathematician who is best known for the Doppler effect in wave theory.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1804-10-24",
+						"endDate":"1891-06-23",
+						"headline":"Wilhelm Eduard Weber",
+						"text":"Wilhelm Weber was a German physicist who did important work on electricity. He collaborated with Gauss.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+						{
+						"startDate":"1804-10-28",
+						"endDate":"1849-02-15",
+						"headline":"Pierre François Verhulst",
+						"text":"Pierre Verhulst was a Belgian statistician who worked on population growth.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+						{
+						"startDate":"1804-12-10",
+						"endDate":"1851-02-18",
+						"headline":"Carl Gustav Jacob Jacobi",
+						"text":"Carl Jacobi made basic contributions to the theory of elliptic functions. He carried out important research in partial differential equations of the first order and applied them to the differential equations of dynamics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+						{
+						"startDate":"1804-12-15",
+						"endDate":"1889-12-12",
+						"headline":"Viktor Yakovlevich Bunyakovsky",
+						"text":"Viktor Bunyakovsky worked on Number Theory as well as geometry, mechanics and hydrostatics. He discovered the Cauchy-Schwarz inequality 25 years before Cauchy or Schwarz.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+		           	{
+						"startDate":"1804-01-01",
+						"endDate":"1863-11-23",
+						"headline":"George Birch Jerrard",
+						"text":"George Jerrard was an English mathematician who worked on the theory of equations.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1805-01-30",
+						"endDate":"1890-12-30",
+						"headline":"Edward Sang",
+						"text":"Edward Sang was a Scottish mathematician who wrote extensively on mathematical, mechanical, optical and actuarial topics",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1805-02-13",
+						"endDate":"1859-05-05",
+						"headline":"Johann Peter Gustav Lejeune Dirichlet",
+						"text":"Lejeune Dirichlet is best known for his proof that in any arithmetic progression with first term coprime to the difference there are infinitely many primes",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1805-08-04",
+						"endDate":"1865-09-02",
+						"headline":"Sir William Rowan Hamilton",
+						"text":"William Rowan Hamilton was an Irish astronomer and mathematician who discovered the quaternions.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1806-01-23",
+						"endDate":"1885-05-03",
+						"headline":"Ernst Ferdinand Adolf Minding",
+						"text":"Ferdinand Minding worked in differential geometry and the theory of surfaces.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1806-03-31",
+						"endDate":"1895-02-03",
+						"headline":"Thomas Penyngton Kirkman",
+						"text":"Thomas Kirkman wrote on the theory of groups and his writings are the first systematic account of the elements of group theory in English. He also made many contributions to combinatorics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1806-06-27",
+						"endDate":"1871-03-18",
+						"headline":"Augustus De Morgan",
+						"text":"Augustus De Morgan became the first professor of mathematics at University College London and made important contributions to English mathematics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1806-08-10",
+						"endDate":"1871-02-24",
+						"headline":"Julius Lugwig Weisbach",
+						"text":"Julius Weisbach was a German mathematician who wrote on mechanics, hydraulics and surveying as well as mathematics.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1806-01-01",
+						"endDate":"1843-03-12",
+						"headline":"Robert Murphy",
+						"text":"Robert Murphy was an Irish mathematician who worked on the theory of equations and was among the first to consider algebras of operators.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1807-01-06",
+						"endDate":"1891-09-17",
+						"headline":"Józeph Miksa Petzval",
+						"text":"Józeph Petzval was a Hungarian mathematician who invented the Laplace transform independently of Laplace..",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1807-06-29",
+						"endDate":"1894-01-30",
+						"headline":"Moritz Abraham Stern",
+						"text":"Moritz Abraham Stern's parents both came from old-established, well-off Jewish families in Frankfurt.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1808-05-09",
+						"endDate":"1882-06-08",
+						"headline":"John Scott Russell",
+						"text":"John Scott Russell was a Scottish engineer and naval architect best known for his identification of a solitary wave.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1809-04-15",
+						"endDate":"1877-09-26",
+						"headline":"Hermann Günter Grassmann",
+						"text":"Hermann Grassmann is chiefly remembered for his development of a general calculus for vectors.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+						{
+						"startDate":"1808-07-25",
+						"endDate":"1882-12-24",
+						"headline":"Johann Benedict Listing",
+						"text":"Johann Listing wrote one of the earliest texts on Topology.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1808-12-28",
+						"endDate":"1869-08-10",
+						"headline":"Louis Victoire Athanase Dupré",
+						"text":"Athanase Dupré was a French mathematician who worked on number theory and the mechanical theory of heat.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1808-01-01",
+						"endDate":"1879-05-07",
+						"headline":"Philip Kelland",
+						"text":"Philip Kelland became professor of mathematics at Edinburgh and worked on heat, light and water waves.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1809-03-24",
+						"endDate":"1882-09-08",
+						"headline":"Joseph Liouville",
+						"text":"Joseph Liouville is best known for his work on transcendental numbers. He constructed an infinite class of such numbers.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+						{
+						"startDate":"1809-04-04",
+						"endDate":"1880-10-06",
+						"headline":"Benjamin Peirce",
+						"text":"Benjamin Peirce was an early American mathematician who worked on celestial mechanics and geodesy on the applied side and linear associative algebra and number theory on the pure side. He has been called the Father of pure mathematics in America.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1809-06-04",
+						"endDate":"1871-12-28",
+						"headline":"John Henry Pratt",
+						"text":"John Pratt worked in India as a chaplain. He published works on the shape of the earth.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1809-09-04",
+						"endDate":"1896-05-24",
+						"headline":"Luigi Federico Menabrea",
+						"text":"Luigi Menabrea was a French-born soldier and engineer who made contributions to elasticity theory and became prime-minister of Italy.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1809-01-01",
+						"endDate":"1847-10-24",
+						"headline":"James MacCullagh",
+						"text":"James MacCullagh was an Irish mathematician who published on crystalline refraction and reflection.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1810-01-29",
+						"endDate":"1893-05-14",
+						"headline":"Ernst Eduard Kummer",
+						"text":"Eduard Kummer's main achievement was the extension of results about the integers to other integral domains by introducing the concept of an ideal.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1811-03-11",
+						"endDate":"1877-09-23",
+						"headline":"Urbain Jean Joseph Le Verrier",
+						"text":"Urbain Le Verrier is best known for the calculations which led to the discovery of Neptune.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1811-04-22",
+						"endDate":"1874-08-06",
+						"headline":"Ludwig Otto Hesse",
+						"text":"Otto Hesse worked on the development of the theory algebraic functions and the theory of invariants. He is remembered particularly for introducing the Hessian determinant.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1811-10-25",
+						"endDate":"1832-05-31",
+						"headline":"Évariste Galois",
+						"text":"Évariste Galois produced a method of determining when a general equation could be solved by radicals and is famous for his development of early group theory.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1811-01-01",
+						"endDate":"1883-06-18",
+						"headline":"John James Waterston",
+						"text":"John Waterston's paternal grandfather, William Waterston, married Catherine Sandeman from the family of port wine importers. ",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1811-01-01",
+						"endDate":"1882-01-01",
+						"headline":"Li Shanlan",
+						"text":"Li Shanlan was the greatest Chinese mathematician of the 19^th century who translated Western works and gave many summation formulas.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1812-01-25",
+						"endDate":"1882-06-01",
+						"headline":"William Shanks",
+						"text":"William Shanks is famed for his calculation of π to 707 places in 1873, which unfortunately was only correct for the first 527 places.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1812-09-29",
+						"endDate":"1847-06-07",
+						"headline":"Gustav Adolph Göpel",
+						"text":"Adolph Göpel's father was a teacher of music in Rostock and Adolph inherited from him considerable musical talent.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1813-04-09",
+						"endDate":"1853-12-17",
+						"headline":"Robert Richard Anstice",
+						"text":"Robert Anstice's parents were William and Penelope Anstice. William Anstice ran an ironworks and this family business was eventually taken over by the eldest of the Anstice's four sons who was named William after his father.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1813-04-13",
+						"endDate":"1844-02-23",
+						"headline":"Duncan Farquharson Gregory",
+						"text":"Duncan Gregory was a Scottish mathematician who was one of the first to investigate modern ideas of abstract algebra.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1813-07-18",
+						"endDate":"1854-09-02",
+						"headline":"Pierre Alphonse Laurent",
+						"text":"Pierre Laurent was a French mathematician best-known for his study of the so-called Laurent Series in Complex analysis",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1814-01-15",
+						"endDate":"1895-03-20",
+						"headline":"Ludwig Schläfli",
+						"text":"Schläfli's work was in geometry, arithmetic and function theory. He is best known for the so-called Schläfli symbols which are used to classify polyhedra",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1814-01-24",
+						"endDate":"1883-07-20",
+						"headline":"John William Colenso",
+						"text":"John Colenso's father, also named John William Colenso, was a mineral agent associated with tin mining in Cornwall.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1814-04-20",
+						"endDate":"1872-07-01",
+						"headline":"Ferdinando Pio Rosellini",
+						"text":"Fernando Pio Rosellini was an Italian educationalist",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1814-05-30",
+						"endDate":"1894-02-14",
+						"headline":"Eugène Charles Catalan",
+						"text":"Catalan was a Belgian mathematician who defined the numbers called after him, while considering the solution of the problem of dissecting a polygon into triangles by means of non-intersecting diagonals.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1814-06-07",
+						"endDate":"1848-05-21",
+						"headline":"Pierre Laurent Wantzel",
+						"text":"Pierre Wantzel's father served in the army for seven years after the birth of Pierre, then became professor of applied mathematics at the École speciale du Commerce. ",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1814-09-03",
+						"endDate":"1897-03-15",
+						"headline":"James Joseph Sylvester",
+						"text":"J J Sylvester did important work on matrix theory. He discovered the discriminant of a cubic equation and first used the name 'discriminant' for equations of higher order..",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1815-12-15",
+						"endDate":"1876-01-27",
+						"headline":"Osip Ivanovich Somov",
+						"text":"Osip Somov's father was Ivan Somov. Osip attended secondary school in Moscow and then entered Moscow University to study mathematics and physics in the famous Faculty of Physics and Mathematics. ",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1815-11-02",
+						"endDate":"1864-12-08",
+						"headline":"George Boole",
+						"text":"George Boole approached logic in a new way reducing it to a simple algebra, incorporating logic into mathematics. He also worked on differential equations, the calculus of finite differences and general methods in probability.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1815-10-31",
+						"endDate":"1897-02-19",
+						"headline":"Karl Theodor Wilhelm Weierstrass",
+						"text":"Karl Weierstrass is best known for his construction of the theory of complex functions by means of power series.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1815-12-10",
+						"endDate":"1852-11-27",
+						"headline":"Augusta Ada King, countess of Lovelace",
+						"text":"Ada Lovelace was a daughter of Lord Byron who became interested in Babbage's analytic engine and described how it could be programmed",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1816-02-07",
+						"endDate":"1900-06-12",
+						"headline":"Jean Frédéric Frenet",
+						"text":"Jean Frenet was a French mathematician best remembered for the Serret-Frenet formulas for a space-curve.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1816-04-09",
+						"endDate":"1872-08-05",
+						"headline":"Charles Eugene Delaunay",
+						"text":"János Bolyai was a pioneer of non-Euclidean geometry.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1816-06-10",
+						"endDate":"1887-05-14",
+						"headline":"Johann Georg Rosenhain",
+						"text":"Johann Rosenhain was born into a Jewish family. His parents were Nathan Rosenhain and Röschen Joseph. He studied at Friedrich College in Konigsberg, then at the University of Königsberg where he was taught by Carl Jacobi and Julius Richelot.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+						{
+						"startDate":"1816-07-07",
+						"endDate":"1893-12-06",
+						"headline":"Johann Rudolf Wolf",
+						"text":"Rudolf Wolf's parents were Regula Gossweiler and Johannes Wolf who was a minister in the Church. ",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+						{
+						"startDate":"1817-01-29",
+						"endDate":"1891-09-18",
+						"headline":"William Ferrel",
+						"text":"William Ferrel was an American astronomer who worked on the theory of tides.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+						{
+						"startDate":"1817-02-18",
+						"endDate":"1880-06-27",
+						"headline":"Carl Wilhelm Borchardt",
+						"text":"Carl Borchardt was a German mathematician who worked in a variety of areas in analysis. He edited Crelle's Journal for more than 30 years.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1817-03-05",
+						"endDate":"1889-03-07",
+						"headline":"Angelo Genocchi",
+						"text":"Angelo Genocchi attended school in Piacenza and then studied law at the University of Piacenza. Despite his course being law he always had mathematics as his favourite subject and he became very knowledgeable in mathematics despite taking a law course",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1817-07-19",
+						"endDate":"1882-09-20",
+						"headline":"Charles Auguste Briot",
+						"text":"Charles Briot's father was Auguste Briot and he was merchant in the town of St Hippolyte. It was in this town in Doubs, Franche-Comté near the border with Switzerland that Charles, the oldest child of his parents large family, was born.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1818-03-09",
+						"endDate":"1861-04-05",
+						"headline":"Ferdinand Joachimsthal",
+						"text":"Ferdinand Joachimsthal made substantial contributions to the theory of surfaces and applied the theory of determinants to geometry.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1818-03-10",
+						"endDate":"1893-06-08",
+						"headline":"Joel Evans Hendricks",
+						"text":"The first puzzle with Joel E Hendricks is his middle name. Most authoritative sources give Evans while some authoritative sources give Emanuel.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-01-14",
+						"endDate":"1895-01-27",
+						"headline":"James Cockle",
+						"text":"James Cockle's father, also named James Cockle, was a doctor who both treated patients and manufactured his own medicine to sell.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-06-05",
+						"endDate":"1892-01-21",
+						"headline":"John Couch Adams",
+						"text":"John Couch Adams was an astronomer and mathematician who was the first person to predict the position of a planet beyond Uranus.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-07-16",
+						"endDate":"1884-03-13",
+						"headline":"Siegfried Heinrich Aronhold",
+						"text":"Siegfried Aronhold made important contributions to the theory of invariants.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-08-13",
+						"endDate":"1903-02-01",
+						"headline":"George Gabriel Stokes",
+						"text":"George Stokes established the science of hydrodynamics with his law of viscosity describing the velocity of a small sphere through a viscous fluid.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-08-30",
+						"endDate":"1885-03-02",
+						"headline":"Joseph Alfred Serret",
+						"text":"Joseph Serret was a French mathematician best remembered for the Serret-Frenet formulas for a space-curve",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					
+					{
+						"startDate":"1819-09-07",
+						"endDate":"1885-09-09",
+						"headline":"Jean Claude Bouquet",
+						"text":"Claude Bouquet was a French mathematician who worked on differential geometry and on series expansions of functions and elliptic functions.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-09-18",
+						"endDate":"1868-02-11",
+						"headline":"Jean Bernard Léon Foucault",
+						"text":"Léon Foucault was a French mathematician and astronomer who is best known for his invention of a pendulum which demonstrates the rotation of the earth",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-09-23",
+						"endDate":"1896-09-18",
+						"headline":"Armand-Hippolyte-Louis Fizeau",
+						"text":"Hippolyte Fizeau was the eldest son of Béatrice and Louis Fizeau. His father Louis Fizeau, coming from a family many generations of which had been doctors, was Professor of Pathology at the Paris Medical School.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-09-25",
+						"endDate":"1904-01-22",
+						"headline":"George Salmon",
+						"text":"George Salmon made many discoveries about ruled surfaces and other surfaces.",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+					
+					{
+						"startDate":"1819-12-22",
+						"endDate":"1892-06-22",
+						"headline":"Pierre Ossian Bonnet",
+						"text":"Pierre Bonnet attended the Collège in Montpellier, then in 1838 he entered the École Polytechnique in Paris. He also studied at the École des Ponts et des Chaussées and on graduating he was offered a post as an engineer",
+						"asset": {
+							"asset":"",
+							"thumbnail":"",
+							"type": "",
+							"caption":"",
+						}
+					},
+						
+					
+				],
+				"config": {
+					"zoom": 1,
+					"keyboardCommands": true,
+					"date": {
+						"language": "en",
+						"format": "d F Y",
+						"buttonFormat": "y.m.d"
+					}
+				}
+			};
+
+			$("#jquery-timeline").jqueryTimeline(data);
+
+			var timer = -1;
+			$("#SearchText").keyup(function(){
+			
+			
+				if (timer > 0)
+					clearTimeout(timer);
+					
+				//will start searching when user will stop writing	
+				timer = setTimeout(function(){
+				
+					clearTimeout(timer);
+					var searchText = $("#SearchText").val();
+					if (searchText=="")
+					{
+						$("#jQueryTimeLine").show();
+						$("#SearchResults").empty().hide();
+						return;
+					}
+						
+					var result = Enumerable.From(data.timeline).Where(function (x) { return x.headline.toLowerCase().indexOf(searchText) > -1; }).ToArray();
+					$("#SearchResults").empty().hide();
+					$("#jQueryTimeLine").hide();
+					if (result && result.length > 0)
+					{
+						var html = "<ul>";
+						for (var i=0; i < result.length; i++)
+						{
+							html +="<li><h3>"+result[i].headline+"</h3>";
+							html+="<span>Start Date: "+result[i].startDate+"</span>";
+							html+="<span>End Date: "+result[i].endDate+"</span>";
+							html+="<p>"+result[i].text+"</p>";
+							
+							html+="</li>";
+						}
+						html+="</ul>";
+						$("#SearchResults").html(html).fadeIn(800);
+					}
+				
+				}, 400);	
+			});
+			
+			// TODO: display 2 timelines at the same time
+		});
+	</script>
+</body>
+</html>

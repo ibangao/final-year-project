@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+   
+    <link rel="stylesheet" type="text/css" href="style.css">    
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-9 col-md-7 main">
+
+            <h1 class="page-header">Ernst Abbe</h1>
+             <h3>Born: 23 January 1840 in Eisenach, Grand Duchy of Saxe-Weimar-Eisenach (now in Germany)<br/>
+Died: 14 January 1905 in Jena, Germany</h3><img src="images/Abbe.jpg" class="p-image"/>
+            <section data-place="overview">
+                <p>Ernst Abbe's father worked as a spinner who found it extremely difficult to provide for his family. Kendall, writing in [2], describes Ernst's childhood:-</p>
+
+<p>His childhood was one of privation, his father worked on his feet 16 hours every day with no breaks for meals. Ernst, however, won scholarships and was helped through his studies by his father's employer.</p>
+
+<p>Abbe studied at the University of Jena and the University of Göttingen, receiving his doctorate from Göttingen in 1861 with a dissertation on thermodynamics. In 1863 he joined the teaching staff at the University of Jena and he presented the paper Über die Gesetzmässigkeit in der Vertheilung bei Beobachtungsreihen for his teaching qualification.</p>
+
+<p>M G Kendall, see [2] or [3], writes:-
+
+O B Sheynin has recently called attention to a most remarkable paper by Ernst Abbe, presented in 1863, in which Abbe derives not only the c2 distribution, but R L Anderson's (1942) distribution of the serial correlation coefficient. ... The paper is a superbly competent piece of work and perhaps the most remarkable anticipation of later studies of distribution theory that have yet come to light.</p>
+
+<p>Abbe was appointed professor of physics and mathematics at Jena in 1870 and, in 1878, he was appointed director of the astronomical observatory at Jena and of the meteorological observatory at Jena.</p>
+
+<p>However, Abbe had been approached by Carl Zeiss in 1866 with various optical problems. This turned his attention towards optics and astronomy. In addition to his university posts, Abbe was made research director of the Zeiss optical works in 1866.
+
+In 1868 he invented the apochromatic lens system for the microscope. This important breakthrough eliminates both the primary and secondary colour distortion of microscopes.</p>
+
+<p>Other optical advances which Abbe made include a clearer theoretical understanding of limits to magnification and the discovery the Abbe sine condition, as it is called today, which gives conditions on a lens for it to form a sharp image, without the defects of coma and spherical aberration.
+
+He also made practical improvements in microscope design including, in 1870, the use of a condenser to give a high-powered even illumination of the field of view. The Carl Zeiss Foundation describes Abbe's work at this time as follows:-</p>
+
+<p>One year after beginning the manufacture of the Carl Zeiss compound microscope, in 1873, Herr Abbe released a scientific paper describing the mathematics leading to the perfection of this wonderful invention. For the first time in optical design, aberration, diffraction and coma were described and understood. Abbe described the optical process so well that this paper has become the foundation upon which much of our understanding of optical science rests today. As a reward for his efforts Carl Zeiss made Abbe a partner in his burgeoning business in 1876.</p>
+
+<p>Becoming wealthy through his optical work and a partnership with Zeiss, Abbe set up and endowed the Carl Zeiss Foundation for research in science and social improvement in 1891. The Carl Zeiss Foundation describes its setting up as follows:-</p>
+
+<p>This foundation established a new group as the owners of Carl Zeiss. The greater portion of the assets were deeded to the University of Jena, whose Department of Education managed the universities interests. This authority was bound by a set of statutes drawn up by Abbe himself, after studying sociology and law for two years. The balance of the estate was donated to the employees of Carl Zeiss.</p>
+
+<p>Abbe introduced industrial relations changes into the Zeiss optical works in 1896 which today sound commonplace but were many years ahead of their time. These included an 8 hour working day, holiday pay, sick pay and pensions.</p>
+            </section>
+
+            <section data-place="Germany">
+                <h2>Birthplace Location</h2>
+                
+                <p>Eisenach, Grand Duchy of Saxe-Weimar-Eisenach (now in Germany)</p>
+            </section>
+
+           
+
+        </div>
+
+        <div id="map" class="col-sm-3 col-md-5 sidebar">
+
+        </div>
+
+    </div>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="storymap.js"></script>
+<script type="text/javascript">
+    (function () {
+        'use strict';
+
+        // additional layers
+        var layers = {
+          'test' : L.tileLayer.wms('http://limes.grid.unep.ch/geoserver/wms?', {
+              layers: 'limes:Balkash_173_20140830_LC8_NDVI',
+              tiled: true,
+              format: 'image/png',
+              transparent: true,
+              maxZoom: 14,
+              minZoom: 0,
+              continuousWorld: true
+              })
+        };
+
+        var markers = {
+            Germany: {lat: 52.5167, lon:13.3833, zoom: 7}
+        };
+
+        $('.main').storymap({markers: markers});
+    }());
+</script>
+</body>
+</html>

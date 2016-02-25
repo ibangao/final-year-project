@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+   
+    <link rel="stylesheet" type="text/css" href="style.css">    
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-9 col-md-7 main">
+
+            <h1 class="page-header">Max Abraham</h1>
+             <h3>Born: 26 March 1875 in Danzig, Germany <br/>(now Gdańsk, Poland)<br/>
+Died: 16 November 1922 in Munich, Germany</h3><img src="images/Abraham_Max.jpg" class="p-image"/>
+            <section data-place="overview">
+                <p>Max Abraham was born into a Jewish family who had made considerable amounts of money as merchants. He studied at the University of Berlin under Planck, writing his doctoral dissertation in 1897. After this he spent three years at the University of Berlin working as Planck's assistant.</p>
+
+<p>In 1900 Abraham was appointed as a Privatdozent at Göttingen. He lectured at Göttingen as a Privatdozent until 1909 which is an unusual length of time for anyone to hold such an unpaid lecturing position. The reason for his failure to obtain a permanent university position during this period was not due to his ability but rather was a result of his personality. Goldberg writes in [1]:-</p>
+
+<p>... he had no patience with what he considered to be silly or illogical argumentation. Abraham had a penchant for being critical and had no hesitation in publicly chastising his colleagues, regardless of their rank or position. His sharp wit was matched by an equally sharp tongue, and as a result he remained a Privatdozent at Göttingen for nine years.</p>
+
+<p>In 1909 Abraham accepted a post at the University of Illinois in the United States. Disliking the small university atmosphere of Illinois, he returned within a few months to Göttingen, going next to Italy at the invitation of Levi-Civita. Abraham was professor of rational mechanics at the University of Milan until 1914. During this time Abraham and Einstein disagreed strongly about the theory of relativity in a correspondence discussed in [3] and [4]. Einstein also argued about relativity in a correspondence with Levi-Civita and Abraham played a role in this argument too, see for example [4].</p>
+
+<p>Forced to return to Germany at the start of World War I, Abraham worked on the theory of radio transmission. Unable to return to Milan after the War he worked at Stuttgart until 1921, substituting for the professor of physics at the Technische Hochschule, when he accepted a chair in Aachen. He took ill on the way to Aachen and a brain tumour was diagnosed. He never recovered and [2]:-</p>
+
+<p>... just as his life was suffering, his end was full of agony.</p>
+
+<p>Abraham's work is almost all related to Maxwell's theory and he wrote a text which was the standard work on electrodynamics in Germany for a long time. Goldberg writes in [1]:-</p>
+
+<p>His consistent use of vectors was a significant factor in the rapid acceptance of vector notation in Germany. But one of the most noteworthy features of the text was that in each new edition Abraham saw fit to include not only the latest experimental work but also the latest theoretical contributions, even if these contributions were in dispute. Furthermore, he had no hesitation, after explicating both sides of a question, in using the book to argue his own point of view.</p>
+
+<p>His theory of the electron was developed in 1902, and its case strongly agrued in his text, but in 1904 Lorentz and Einstein produced a different theory. Abraham's study of the structure and nature of the electron led him to the idea of the electromagnetic nature of its mass, and consequently to the dependence of the velocity of electromagnetic waves in a gravitational field. At first his ideas were supported by experiment, particularly work carried out by Wilhelm Kaufmann, but later work was to favour the theory developed by Lorentz and Einstein.</p>
+
+<p>Abraham was opposed to relativity all his life. At first he objected both to the postulates on which relativity was based and also to the fact that he felt that the experimental evidence did not support the theory. By 1912 Abraham, who despite his objections was one of those who best understood relativity theory, was prepared to accept that the theory was logically sound. However, he still did not accept that the theory accurately described the physical world.</p>
+
+<p>Abraham had been a strong believer in the existence of the aether and that an electron was a perfectly rigid sphere with a charge distributed evenly over its surface. He was not going to give up these beliefs easily particularly since he felt that his views were based on common sense. He hoped that further astronomical data would support the aether theory and show that relativity was not in fact a good description of the real world. As Born and von Laue write in [2]:-</p>
+
+<p>He loved his absolute aether, his field equations, his rigid electron just as a youth loves his first flame, whose memory no later experience can extinguish.</p>
+
+<p>Many would still agree with Abraham that his version of the world was more in line with common sense. However, mathematics and physics over the 20th century has shown that the world we inhabit is at variance with "common sense" when we examine the large scale structure and the small scale structure.</p>
+            </section>
+
+            <section data-place="Poland">
+                <h2>Birthplace Location</h2>
+                
+                <p>Germany (now Gdańsk, Poland)</p>
+            </section>
+
+           
+
+        </div>
+
+        <div id="map" class="col-sm-3 col-md-5 sidebar">
+
+        </div>
+
+    </div>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="storymap.js"></script>
+<script type="text/javascript">
+    (function () {
+        'use strict';
+
+        // additional layers
+        var layers = {
+          'test' : L.tileLayer.wms('http://limes.grid.unep.ch/geoserver/wms?', {
+              layers: 'limes:Balkash_173_20140830_LC8_NDVI',
+              tiled: true,
+              format: 'image/png',
+              transparent: true,
+              maxZoom: 14,
+              minZoom: 0,
+              continuousWorld: true
+              })
+        };
+
+        var markers = {
+           Poland: {lat: 52.2167, lon: 21.0333, zoom: 7}
+        };
+
+        $('.main').storymap({markers: markers});
+    }());
+</script>
+</body>
+</html>
